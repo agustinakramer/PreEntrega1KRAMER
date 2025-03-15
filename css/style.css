@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5e5f7;     
+}
+
+/* Nav */
+
+nav {
+    background-color: #333;
+    display: flex;           
+    justify-content: center; 
+    gap: 2em;                
+    padding: 10px 0;         
+}
+
+nav ul {
+    padding: 0;              
+    margin: 0;               
+    list-style: none;        
+}
+
+nav li {
+    display: inline; 
+    padding: 10px 15px;        
+}
+
+nav a {
+    text-decoration: none;   
+    color: white;             
+    font-weight: 600;        
+    font-size: 16px;         
+    transition: color 0.3s;  
+}
+
+nav a:hover {
+    color: #007bff;          
+}
+
+/* Titulo */
+.contact-title {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-paragraph{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+
