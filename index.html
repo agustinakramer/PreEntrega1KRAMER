@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <ul class="nav-links">
             <li><a href="#">Inicio</a></li>
             <li><a href="pages/about.html">Acerca De</a></li>
             <li><a href="pages/contact.html">Contacto</a></li>
@@ -16,6 +19,35 @@
             <li><a href="pages/work.html">Trabajo</a></li>
         </ul>
     </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>Descubre mis proyectos y habilidades</p>
+        </div>
+       
+    </header>
+
+    <section class="hero-about">
+        <div class="hero-about-container">
+
+            <div class="hero-about-image">
+                <img src="assets/home-about.png" alt="Imagen de presentación">
+            </div>
+
+            <div class="hero-about-content">
+                <h2>Sobre Mi</h2>
+                <p>Soy un desarrolladora web apasionada por crear experiencias digitales únicas. Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente. En este portafolio, encontrarás una selección de mis trabajos más destacados.</p>
+
+                <div class="hero-about-cta">
+                    <a href="pages/about.html" class="about-btn">Ver Más</a>
+                </div>
+
+            </div>
+
+        </div>
+       
+    </section>
 
     <footer>
         <p>&copy; 2025 Agustina Kramer. Todos los derechos reservados.</p>

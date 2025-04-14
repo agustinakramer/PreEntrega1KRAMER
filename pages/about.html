@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <ul class="nav-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="#">Acerca De</a></li>
             <li><a href="contact.html">Contacto</a></li>
@@ -16,6 +19,35 @@
             <li><a href="work.html">Trabajo</a></li>
         </ul>
     </nav>
+
+    <section class="about">
+        <div class="about-container">
+          <!-- Columna Izquierda: Imagen + Estadísticas -->
+          <div class="about-left">
+            <div class="about-image">
+              <img src="../assets/about-page.jpeg" alt="Imagen de presentación">
+            </div>
+            <div class="about-statistics">
+              <div><h3>+5</h3><p>Años de experiencia</p></div>
+              <div><h3>+10</h3><p>Proyectos completados</p></div>
+              <div><h3>+20</h3><p>Clientes felices</p></div>
+              <div><h3>+100</h3><p>Horas de trabajo</p></div>
+            </div>
+          </div>
+      
+          <!-- Columna Derecha: Texto + Botón -->
+          <div class="about-content">
+            <h2>Sobre Mí</h2>
+            <p>Actualmente me desempeño como Project Manager, aportando experiencia en la dirección de proyectos de software.</p>
+            <p>Mi experiencia radica en liderar equipos diversos y asegurar resultados oportunos en cada etapa del desarrollo.</p>
+      
+            <div class="about-cta">
+              <a href="contact.html" class="contact-btn">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
     <footer>
         <p>&copy; 2025 Agustina Kramer. Todos los derechos reservados.</p>

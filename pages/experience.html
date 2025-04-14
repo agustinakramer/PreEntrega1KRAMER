@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        
+        <ul class="nav-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="about.html">Acerca De</a></li>
             <li><a href="contact.html">Contacto</a></li>
@@ -16,6 +19,57 @@
             <li><a href="work.html">Trabajo</a></li>
         </ul>
     </nav>
+
+    <section class="experience">
+        <div class="experience-container">
+            <div class="experience-content">
+                <h2>Mi experiencia</h2>
+                <p>Soy un desarrolladora web apasionada por crear experiencias digitales únicas. Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente. En este portafolio, encontrarás una selección de mis trabajos más destacados.</p>
+            </div>
+           
+            <div class="experience-image">
+                <img src="../assets/home-about.png" alt="Imagen de presentación">
+                
+            </div>
+
+            <div class="experience-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Años</th>
+                            <th>Puesto</th>
+                            <th>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023 - Presente</td>
+                            <td>Project Manager, Clearfire, Inc</td>
+                            <td>Gestión de proyectos de mantenimiento de WordPress y Craft, actuando como punto
+                                de contacto directo con los clientes.
+                                Liderazgo en el inicio de nuevos proyectos, incluyendo la creación de
+                                funcionalidades, desarrollo de sitios web y migraciones/actualizaciones de Craft.
+                                Supervisión de la garantía de calidad (QA) para mejoras importantes y nuevas
+                                funcionalidades antes del lanzamiento.
+                                Implementación y gestión de etiquetado en GTM y GA4 para seguimiento</td>
+                        </tr>
+                        <tr>
+                            <td>2022 - 2023</td>
+                            <td> Senior Project Manager, VML</td>
+                            <td>Supervisión de todos los aspectos de consistencia de Etiquetado/Taxonomía en
+                                campañas globales dentro del proyecto de alto nivel de Coca-Cola.
+                                Implementación de proyectos a través de la gestión en Jira y Monday, coordinación
+                                y seguimiento.
+                                Escalamiento de todos los casos que requieren soporte y recolección de datos.
+                                Línea de comunicación directa con clientes, agencias y equipos internos a nivel
+                                global.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+    </section>
 
     <footer>
         <p>&copy; 2025 Agustina Kramer. Todos los derechos reservados.</p>
