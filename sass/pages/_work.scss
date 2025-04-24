@@ -1,0 +1,62 @@
+@use "../utils/mixins.scss" as *;
+/* Work Page */
+.work {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+  
+  .work h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .work-grid {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .work-item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    @include button-style(#ccc, #000);
+  }
+  
+  .btn:hover {
+    background-color: #aaa;
+  }
+  
+  /* Work media queries */
+  @media (max-width: 768px) {
+    .work{
+        margin-bottom: auto;
+    }
+    .work-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .work-item {
+      width: 80%;
+      max-width: 300px;
+    }
+  }

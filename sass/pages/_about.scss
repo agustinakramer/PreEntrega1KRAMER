@@ -1,0 +1,120 @@
+@use "../utils/mixins.scss" as *;
+/* About Page */
+.about {
+    margin-top: 40px;
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-bottom: 120px;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* Columna izquierda: imagen + estadísticas */
+  .about-left {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen */
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+  }
+  
+  /* Estadísticas */
+  .about-statistics {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .about-statistics div {
+    text-align: center;
+  }
+  
+  .about-statistics h3 {
+    font-size: 2rem;
+    color: #505051;
+  }
+  
+  .about-statistics p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Columna derecha: texto */
+  .about-content {
+    flex: 1 1 500px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
+  
+  .about-cta {
+    margin-top: 30px;
+  }
+  
+  .contact-btn {
+    @include button-style(#505051, white);
+  }
+  
+  .contact-btn:hover {
+    background-color: #3a3a3a;
+  }
+  
+  /* About page media queries */
+  @media (max-width: 768px) {
+    .about {
+      padding: 40px 20px;
+      margin-bottom: 80px;
+    }
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-left,
+    .about-content {
+      width: 100%;
+    }
+  
+    .about-statistics {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+  
+    .contact-btn {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  

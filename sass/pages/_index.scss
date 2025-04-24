@@ -1,0 +1,121 @@
+@use "../utils/mixins.scss" as *;
+/* Homepage Hero */
+.hero {
+    background-image: url('../assets/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+/* Homepage About Container */
+.hero-about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .hero-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-about-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+
+  .hero-about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  .hero-about-content {
+    flex: 1 1 500px;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .hero-about-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .hero-about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .hero-about-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-btn {
+    @include button-style(#505051, white);
+  }
+
+  .about-btn:hover {
+    background-color: #3a3a3a;
+  }
+
+
+
+/* Index media queries */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-about-content,
+      .hero-about-image {
+        max-width: 100%;
+      }
+
+      .about-btn {
+        width: 80%;
+        max-width: 250px;
+      }
+  }
+  

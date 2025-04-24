@@ -1,0 +1,157 @@
+
+/* Experience Container */
+.experience{
+    padding: 80px 40px;
+    background-color: #f9f9f9;
+}
+
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.experience-content{
+    flex: 1;
+    min-width: 300px;
+}
+
+.experience-content h2{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+    text-align: left;
+    font-weight: 600;
+}
+
+.experience-content p{
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.experience-image {
+    display: flex;
+    justify-content: center;
+  }
+
+.experience-image img{
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%; /* hace la imagen circular */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* efecto suave */
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+
+
+thead th:nth-child(1) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 70%
+  }
+   
+  .experience-table th {
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .experience-table td {
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+
+
+/* Experience media queries */
+@media screen and (max-width: 768px) {
+
+
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 20px;
+      }
+    
+      .experience-content h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+    
+      .experience-content p {
+        text-align: center;
+        font-size: 1rem;
+      }
+    
+      .experience-image img {
+        margin: 0 auto 1rem;
+      }
+    
+      .experience-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+      }
+    
+      .experience-table {
+        width: 100%;
+        overflow-x: auto;
+      }
+    
+}
+
+/* Experience media queries para pantallas mas chicas*/
+@media screen and (max-width: 360px) {
+    .experience {
+      padding: 60px 10px;
+    }
+  
+    .experience-container {
+      padding: 20px 10px;
+    }
+  
+    .experience-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .experience-content p {
+      font-size: 0.95rem;
+    }
+  
+    .experience-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+  
+    .experience-table {
+      width: 100%;
+      font-size: 0.85rem; /* achicamos la letra */
+    }
+  
+    .experience-table td, .experience-table th {
+      padding: 10px;
+      word-wrap: break-word;  /* forzamos salto de línea */
+    }
+  }

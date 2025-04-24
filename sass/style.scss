@@ -1,0 +1,25 @@
+ /* Imports Layout */
+ @use "./layout/reset";
+ @use "./layout/footer";
+ @use "./layout/nav";
+
+ /* Imports Utils */
+ @use "./utils/mixins.scss";
+  /* Imports Pages */
+ @use "./pages/index";
+ @use "./pages/work";
+ @use "./pages/experience";
+ @use "./pages/about";
+ @use "./pages/contact";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+
+  
+
+
+
+
+  
