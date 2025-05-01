@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Agustina Kramer - Desarrolladora Web</title>
+    <meta name="description" content="Contactate con Agustina Kramer para consultas sobre desarrollo web, gestión de proyectos o colaboraciones profesionales.">
+    <meta name="keywords" content="Agustina Kramer, contacto, desarrolladora web, gestión de proyectos, colaboración">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
@@ -21,9 +23,10 @@
         </ul>
     </nav>
 
-    <section id="contact", data-aos="fade-up">
-        <h2 class="contact-title">Contactate con Nosotros! </h2>
-        <p class="contact-paragraph"> Contactate con nosotros para recibir mayor informacion sobre nuestros servicios</p>
+    <main>
+    <section id="contact" data-aos="fade-up">
+        <h2 class="contact-title">Contacto con Agustina Kramer</h2>
+        <p class="contact-paragraph">Completa el formulario para obtener información sobre servicios de desarrollo web, consultoría o colaboración profesional.</p>
         <form action="submit_form.php" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
@@ -34,9 +37,11 @@
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
     
-            <button type="submit">Enviar</button>
+            <button type="submit" aria-label="Enviar mensaje de contacto">Enviar</button>
         </form>
     </section>
+
+    </main>
 
 <footer>
     <p>&copy; 2025 Agustina Kramer. Todos los derechos reservados.</p>
