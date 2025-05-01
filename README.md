@@ -1,4 +1,6 @@
-Esta entrega incluye:
-1. Wireframe/prototipo (wireframe de todas tus páginas para vista mobile y desktop)
-2. HTML (uso de etiquetas contenedoras, etiquetas multimedia y etiquetas de texto)
-3. CSS (con modificadores de texto, colores, y listas)
+Esta entrega final incluye:
+1. La estructura completa de mi sitio web.
+2. Estilos finalizados y responsivos de la web.
+3. Técnicas de SEO aplicadas.
+4. Metodologías y estructuras aplicadas tales como SASS, Grids, etc.
+5. Disponibilización del proyecto a través de un servidor.
